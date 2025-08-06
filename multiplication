@@ -1,0 +1,38 @@
+
+#1.Creating Window
+from tkinter import*
+
+root=Tk()
+
+#7.creating functions
+def multiplication():
+    product = int(srilakshmi.get()) * int(saru.get())
+    #multiplication = 20*10
+    # multiplication = 20-> Datatype  : int  
+    my_Result.set(product) 
+
+
+#2.Creating window size and title
+root.title("GUI multiplication")
+root.geometry("700x300")
+my_Result = StringVar()
+
+#3.Creating window labels
+Label(root,text="Enter srilakshmi:").grid(row=0,column=0)
+Label(root,text="Enter saru:").grid(row=1,column=0)
+Label(root,text="multiplication is:").grid(row=2,column=0)
+
+#4.Creating text boxes
+srilakshmi = Entry(root)
+srilakshmi.grid(row=0,column=1)
+saru = Entry(root)
+saru.grid(row=1,column=1)
+
+#5.Creating a button for submitting
+Button(root,text="Submit", command = multiplication).grid(row=2,column=2)
+
+#6.Result
+
+Label(root, text="", textvariable=my_Result).grid(row=2, column=1)
+
+mainloop()
