@@ -5,3 +5,4 @@ y=sys.argv
 #for i in x[1:]:
  #   s=s+int(i)
   #  print(s)2
+print("product of the two numbers")
