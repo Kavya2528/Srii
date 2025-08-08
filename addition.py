@@ -36,3 +36,8 @@ Label(root, text="", textvariable=my_Result).grid(row=2, column=1)
 
 
 mainloop()
+
+a=2
+b=4
+c=a+b
+print(c)
